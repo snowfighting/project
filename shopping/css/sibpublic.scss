@@ -1,0 +1,178 @@
+@mixin widMar($width:1200px){
+  width:$width;
+  margin:0 auto;
+}
+
+/*--------lingquanyouhui banner-----------*/
+.banner{
+  @include widMar();
+  height:150px;
+  margin-top: 25px;
+}
+.bannerlig{
+  @extend.banner;
+  background: url("../img/lingban.jpg") no-repeat center;
+}
+/*--------chaojirenqi banner-----------*/
+.bannerren{
+  @extend.banner;
+  background: url("../img/renqi.jpg") no-repeat center;
+}
+/*--------jingxuan banner-----------*/
+.bannerjing{
+  @extend.banner;
+  position: relative;
+  background: url("../img/jingbanner.jpg") no-repeat center;
+}
+.inbox{
+  position: absolute;
+  left:443px;
+  top:95px;
+}
+.txt{
+  float: left;
+  width:224px;
+  height:32px;
+  line-height:30px;
+  border:0;
+  text-align: center;
+}
+.btn{
+  float: left;
+  width:79px;
+  height:34px;
+  color: #fff;
+  background: transparent;
+  border:0;
+  cursor: pointer;
+}
+/*-------------------*/
+.catlist{
+  @include widMar();
+  height:35px;
+  padding-top:20px;
+}
+.catleft{
+  float: left;
+  width:880px;
+  height:21px;
+}
+.catleft li{
+  float: left;
+  margin-right:10px;
+}
+.catleft a{
+  color: rgb(76,76,76);
+}
+.catlist a:hover{
+  color: red;
+}
+.cartright{
+  float: right;
+  width:220px;
+}
+.cartright span{
+  float: left;
+  color: rgb(76,76,76);
+}
+.cartright a{
+  float: left;
+  color: rgb(160,169,216);
+  margin-left:10px;
+}
+/*--------chaojirenqi cartright-----------*/
+.cartrightren{
+  float: right;
+  width:130px;
+  color: red;
+}
+/*-------------------*/
+.biaoqian{
+  @include widMar();
+  height:38px;
+  border:1px dashed rgb(230,213,200);
+  background: rgb(255,243,234);
+}
+.biaoleft{
+  float: left;
+  width:304px;
+  line-height:38px;
+  padding-left:10px;
+  background: url("../img/bbor.png")no-repeat right center;
+}
+.biaoleft a{
+  float: left;
+  width:80px;
+}
+.biaoleft a:hover{
+  color: red;
+}
+.biaoleft a:hover i{
+  background: url("../img/biao.png")no-repeat 0 -13px;
+}
+.biaoleft i{
+  float: left;
+  width:13px;
+  height:13px;
+  margin:13px 5px 0 0;
+  background: url("../img/biao.png")no-repeat 0 0;
+}
+.biaoright{
+  float: left;
+  width:470px;
+  height:38px;
+  margin-left:50px;
+}
+.biaoright .nohover{
+  padding:0 4px 0 0;
+}
+.biaoright li{
+  float: left;
+  line-height:38px;
+  padding:0 8px;
+}
+.biaoright a{
+  color: rgb(160,169,216);
+}
+.biaoright a:hover{
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

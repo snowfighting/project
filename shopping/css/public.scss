@@ -1,0 +1,227 @@
+$width:100%;
+$colorV:#f00582;
+@mixin widMar($width:1200px){
+  width:$width;
+  margin:0 auto;
+}
+@mixin height($height:25px){
+  height: $height;
+}
+@mixin color($value:#757575){
+  color: $value;
+}
+
+/*-----------------*/
+.navTop{
+  width:$width;
+}
+.topBox{
+  @include widMar();
+  @include height();
+  margin:0 auto;
+}
+.topleft{
+  width:200px;
+  float: left;
+  line-height:24px;
+  @include color();
+}
+.topright{
+  float: right;
+  width:290px;
+  line-height:24px;
+}
+.topright a{
+  @include color();
+}
+.topright .shouc{
+  margin:0 20px;
+}
+.topright .diffcol{
+  @include color(#8da7cb);
+}
+/*-----------------*/
+.header{
+  @include widMar();
+  height:96px;
+}
+.log{
+  float: left;
+  width:540px;
+  height:96px;
+  background: url("../img/head1.jpg") no-repeat left center;
+}
+.headsearch{
+  float: left;
+  width:365px;
+  padding-top:40px;
+  height:40px;
+}
+.headsearch input{
+  float: left;
+}
+.txt{
+  width:241px;
+  height:36px;
+  padding-left:5px;
+  border:2px solid $colorV;
+  line-height:38px;
+  @include color();
+}
+.btn{
+  width: 90px;
+  height:40px;
+  @include color(#fff);
+  background: $colorV;
+}
+.headright{
+  float: right;
+  width:286px;
+  height:70px;
+  padding-top:20px;
+}
+.headright a{
+  float: left;
+  width:60px;
+  height:70px;
+  margin:0 16px;
+  background: url("../img/head2.png")no-repeat 0 1px;
+}
+.headright .hea2{
+  background-position: 0 -77px;
+}
+.headright .hea3{
+  background-position: 0 -151px;
+}
+/*---------------------*/
+.nav{
+  width:$width;
+  height:40px;
+  background: $colorV;
+}
+.navbox{
+  @include widMar();
+  height:40px;
+}
+.navUl{
+  float: left;
+  width:700px;
+}
+.navUl>li{
+  float: left;
+  width:156px;
+  height:40px;
+  margin-right:8px;
+
+  line-height:40px;
+  font-size:16px;
+}
+.navUl>li a{
+  width:116px;
+  @include color(#fff);
+  font-size:16px;
+  padding:0 20px;
+}
+.navUl .posili{
+  position: relative;
+  float: left;
+  width:180px;
+
+}
+.navUl .navfirst{
+  width:93px;
+  padding:0 0 0 87px;
+}
+.navUl>li:hover{
+  background: #bd166f;
+}
+.navtb1{
+  width:34px;
+  height:28px;
+  position: absolute;
+  left:30px;
+  top:8px;
+  background: url("../img/nav1.png") no-repeat center;
+}
+.navthird{
+  position: relative;
+}
+.navtb2{
+  position: absolute;
+  left:107px;
+  width:24px;
+  height:32px;
+  background: url("../img/nav2.gif") no-repeat center;
+}
+.navlist{
+  width:180px;
+  height:300px;
+  position: absolute;
+  left:0;
+  top:40px;
+  background: #fbeaf4;
+}
+.navlist li{
+  width:180px;
+  height:37px;
+}
+.navlist li:hover{
+  width:180px;
+  background: rgb(239,223,228);
+  cursor: pointer;
+}
+.navlist li a{
+  height:37px;
+  width:180px;
+  line-height:36px;
+  color: #333;
+  font-size:12px;
+}
+.navlist span{
+  float: left;
+  width:16px;
+  height:15px;
+  margin:10px 10px 0 45px;
+}
+.n1{
+  background: url("../img/nav_03.png")no-repeat left center;
+}
+.n2{
+
+  background: url("../img/nav_06.png")no-repeat left center;
+}
+.n3{
+  background: url("../img/nav_08.png")no-repeat left center;
+}
+.n4{
+  background: url("../img/nav_10.png")no-repeat left center;
+}
+.n5{
+  background: url("../img/nav_12.png")no-repeat left center;
+}
+.n6{
+  background: url("../img/nav_14.png")no-repeat left center;
+}
+.n7{
+  background: url("../img/nav_16.png")no-repeat left center;
+}
+.n8{
+  background: url("../img/nav_18.png")no-repeat left center;
+}
+.na2{
+  position: relative;
+}
+.na4{
+  position: relative;
+}
+.na2 i,.na4 i{
+  position: absolute;
+  left:120px;
+  top:9px;
+  width:9px;
+  height:14px;
+  background: url("../img/hot.gif") no-repeat center;
+}
+.na4 i{
+  left:155px;
+}
