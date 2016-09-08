@@ -1,0 +1,67 @@
+.header{
+	height: 110px;
+	padding-left: 170px;
+	background: #fecde2 url(../img/head.png) no-repeat 30px center;
+}
+.healeft{
+	float: left;
+	font-size: 28px;
+	margin-top: 24px;
+	color: #fb006a;
+}
+/*--------------------*/
+.mbottom{
+	height: 810px;
+}
+.mboleft{
+	float: left;
+	width: 200px;
+	height: 790px;
+	background: #999;
+	padding-top: 20px;
+}
+.pro{
+	float: left;
+	width: 100%;
+	height: 42px;
+	text-align: center;
+	line-height: 42px;
+	color: #FFFDEF;
+	font-size: 16px;
+	box-shadow: 0 5px 2px #888;
+	
+}
+.pro:hover{
+	background: #fecde2;
+}
+/*--------------------*/
+.mcenter{
+	position: relative;
+	float: left;
+	width: 7px;
+	height: 810px;
+	background: url(../img/bjj_03.png) repeat-y;
+}
+.mcenter img{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -20px;
+}
+/*--------------------*/
+.mright{
+	overflow: hidden;
+}
+iframe{
+	width: 100%;
+	height: 810px;
+	border: 0;
+}
+
+
+
+
+
+
+
+

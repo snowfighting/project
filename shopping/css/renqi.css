@@ -1,3 +1,62 @@
+.renImg {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden; }
 
+.rImgBox {
+  width: 1230px; }
+
+.zhidl {
+  width: 285px;
+  height: 407px;
+  margin-right: 18px;
+  border: 1px solid #ececec; }
+
+.zhidl dt {
+  width: 285px;
+  height: 285px; }
+
+.zhidl dt img {
+  width: 285px;
+  height: 285px; }
+
+.zhidl dd {
+  width: 275px;
+  height: 112px;
+  padding: 5px 5px 0; }
+
+.tao {
+  display: block;
+  height: 28px;
+  color: #666; }
+
+.tao i {
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px; }
+
+.youp {
+  height: 30px;
+  color: #757575; }
+
+.youp i {
+  color: #f15482; }
+
+.youp b {
+  color: #8cbfd3; }
+
+.sale {
+  margin-left: -5px;
+  width: 275px;
+  height: 53px;
+  background: #48bf7d;
+  line-height: 52px;
+  padding-left: 10px;
+  color: #fff; }
+
+.sale b {
+  font-size: 22px;
+  font-weight: bold; }
 
 /*# sourceMappingURL=renqi.css.map */

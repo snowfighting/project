@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/reset.css" type="text/css" />
+		<link rel="stylesheet" href="../mcss/addPro.css" type="text/css" />
+	</head>
+	<body>
+		<!--*************-->
+		<div class="header">
+			<a href="#">当前位置</a>
+			<span>&gt;&gt;</span>
+			<a href="#">增加商品</a>
+			
+		</div>
+		<!--*************-->
+		<div class="addbox">
+			<form method="post"> 
+				<label for="id">id:</label> 
+				<input type="text" name="id" required placeholder="id" />
+				
+				<label for="name">商品名:</label> 
+				<input type="text" name="name" required placeholder="商品名" />
+				
+				<label for="imgsrc">图片地址:</label> 
+				<input type="text" name="imgsrc" required placeholder="图片地址" />
+				
+				<label for="saleprice">在售价:</label> 
+				<input type="text" name="saleprice" required placeholder="在售价" />
+				
+				<label for="xiaprice">券后价:</label> 
+				<input type="text" name="xiaprice" placeholder="券后价" />
+				
+				<label for="neibuquan">内部券:</label> 
+				<input type="text" name="neibuquan" placeholder="内部券面值" />
+		
+				<label for="deadline">结束日期:</label> 
+				<input type="text" name="deadline" placeholder="内部券结束日期" />
+		
+				<label for="surplus">剩余优惠券:</label> 
+				<input type="text" name="surplus" placeholder="剩余优惠券的数量">
+		
+				<label for="receive">已领取优惠券:</label> 
+				<input type="text" name="receive" placeholder="已领取优惠券的数量" />
+		
+				<label for="remadays">剩余天数:</label> 
+				<input type="text" name="remadays" placeholder="活动剩余天数" />
+				
+				<label for="alreasale">已售商品数量:</label> 
+				<input type="text" name="alreasale" placeholder="已售商品数量" />
+			
+				<input type="submit" value="增加商品" />
+			</form>
+
+		</div>
+		
+		
+		
+	</body>
+</html>

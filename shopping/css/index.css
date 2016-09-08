@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*---------------------*/
 .banner {
   width: 1200px;
@@ -180,6 +181,7 @@
 .miaosha {
   width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
   overflow: hidden; }
 
 .miaotop {
@@ -310,7 +312,7 @@
 
 .dot {
   float: left;
-  width: 84px;
+  width: 80px;
   height: 35px;
   line-height: 34px;
   text-align: center;
@@ -325,5 +327,121 @@
   float: left;
   font-size: 28px;
   margin: 5px 15px 0; }
+
+/*----------特卖精选---------------*/
+.temai {
+  width: 1200px;
+  margin: 0 auto; }
+
+.teright {
+  float: right;
+  width: 80px;
+  line-height: 74px; }
+
+.teright a {
+  margin-right: 8px;
+  color: #505050; }
+
+.tebottom, .zhibottom {
+  width: 1200px;
+  overflow: hidden; }
+
+.tebbox, .zhibox {
+  width: 1230px; }
+
+.tedl, .zhidl {
+  width: 285px;
+  height: 387px;
+  margin-right: 18px;
+  border: 1px solid #ececec; }
+
+.tedt, .zhidl dt {
+  width: 285px;
+  height: 285px; }
+
+.tedt img, .zhidl dt img {
+  width: 285px;
+  height: 285px; }
+
+.tedd, .zhidl dd {
+  width: 275px;
+  height: 97px;
+  padding: 5px 5px 0; }
+
+.tao {
+  display: block;
+  height: 28px;
+  color: #666; }
+
+.tao i {
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px; }
+
+.youpin {
+  height: 37px; }
+
+.youpin b {
+  float: left;
+  width: 88px;
+  background: url(../img/youpin.png) no-repeat right center;
+  color: #f00582;
+  font-size: 18px; }
+
+.youpin span {
+  float: right;
+  width: 88px;
+  color: #9a9a9a;
+  font-size: 10px; }
+
+.youpin i {
+  color: #e888a8; }
+
+.qiang span {
+  float: left;
+  width: 54px;
+  height: 14px;
+  padding-left: 18px;
+  color: #a0d2ff;
+  background: url(../img/time.png) no-repeat left center; }
+
+.qiang i {
+  float: right;
+  color: #a0d2ff; }
+
+/*--------------------------*/
+.zhibo {
+  width: 1200px;
+  margin: 0 auto; }
+
+.zhidl {
+  height: 407px; }
+
+.zhidl dd {
+  height: 122px; }
+
+.youp {
+  height: 30px;
+  color: #757575; }
+
+.youp i {
+  color: #f15482; }
+
+.youp b {
+  color: #8cbfd3; }
+
+.sale {
+  margin-left: -5px;
+  width: 275px;
+  height: 53px;
+  background: #de366e;
+  line-height: 52px;
+  padding-left: 10px;
+  color: #fff; }
+
+.sale b {
+  font-size: 22px;
+  font-weight: bold; }
 
 /*# sourceMappingURL=index.css.map */

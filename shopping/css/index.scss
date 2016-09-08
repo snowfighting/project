@@ -227,6 +227,7 @@ $colorV:#f00582;
 .miaosha{
   @include widMar();
   overflow: hidden;
+  overflow: hidden;
 }
 .miaotop{
   @include topbox;
@@ -340,7 +341,7 @@ $colorV:#f00582;
 }
 .dot{
   float: left;
-  width:84px;
+  width:80px;
   height:35px;
   line-height:34px;
   text-align: center;
@@ -358,8 +359,132 @@ $colorV:#f00582;
 }
 
 
+/*----------特卖精选---------------*/
+.temai{
+    @include widMar();
+}
+.teright{
+    float: right;
+    width: 80px;
+    line-height: 74px;
+}
+.teright a{
+    margin-right: 8px;
+    color: rgb(80,80,80);
+}
 
+.tebottom{
+    width: 1200px;
+    overflow: hidden;
+}
+.tebbox{
+    width: 1230px;
+}
+.tedl{
+    width: 285px;
+    height: 387px;
+    margin-right: 18px;
+    border: 1px solid #ececec;
+}
+.tedt{
+    width: 285px;
+    height: 285px;
+}
+.tedt img{
+   width: 285px;
+    height: 285px;
+}
+.tedd{
+    width: 275px;
+    height: 97px;
+    padding: 5px 5px 0;
+}
+.tao{
+    display: block;
+    height: 28px;
+    color: #666;
+}
+.tao i{
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+.youpin{
+    height: 37px;
+}
+.youpin b{
+    float: left;
+    width: 88px;
+    background: url(../img/youpin.png) no-repeat right center;
+    color: $colorV;
+    font-size: 18px;
+    
+}
+.youpin span{
+    float: right;
+    width: 88px;
+    color: #9a9a9a;
+    font-size: 10px;
+    
+}
+.youpin i{
+    color: #e888a8;
+}
+.qiang span{
+    float: left;
+    width: 54px;
+    height: 14px;
+    padding-left: 18px;
+    color: #a0d2ff;
+    background: url(../img/time.png)no-repeat left center;
+}
+.qiang i{
+    float: right;
+    color: #a0d2ff;
+}
 
-
-
-
+/*--------------------------*/
+.zhibo{
+    @include widMar();
+}
+.zhibottom{
+    @extend .tebottom;
+}
+.zhibox{
+    @extend .tebbox;
+}
+.zhidl{
+    @extend .tedl;
+    height: 407px;
+}
+.zhidl dt{
+    @extend .tedt;
+}
+.zhidl dd{
+    @extend .tedd;
+    height: 122px;
+}
+.youp{
+    height: 30px;
+    color: #757575;
+}
+.youp i{
+    color: #f15482;
+}
+.youp b{
+    color: #8cbfd3;
+}
+.sale{
+    margin-left: -5px;
+    width: 275px;
+    height: 53px;
+    background: #de366e;
+    line-height: 52px;
+    padding-left: 10px;
+    color: #fff;
+}
+.sale b{
+    font-size: 22px;
+    font-weight: bold;
+}
