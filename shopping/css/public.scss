@@ -28,7 +28,7 @@ $colorV:#f00582;
 }
 .topright{
   float: right;
-  width:290px;
+  width:350px;
   line-height:24px;
 }
 .topright a{
@@ -40,6 +40,14 @@ $colorV:#f00582;
 .topright .diffcol{
   @include color(#8da7cb);
 }
+.indexlogin{
+    margin: 0 6px 0 20px;
+}
+.indexlogin:hover,.indexsubmit:hover{
+    color: red;
+}
+
+
 /*-----------------*/
 .header{
   @include widMar();

@@ -1,0 +1,327 @@
+.godetail{
+	width: 1160px;
+	margin: 20px auto 0;
+	background: #fff;
+	position: relative;
+	overflow: hidden;
+}
+.goleft{
+	float: left;
+	width: 974px;
+	height: 508px;
+	color: rgb(68,68,68);
+	font-size: 10px;
+}
+.goltop{
+	height: 48px;
+}
+.goltop a{
+	float: left;
+	color: rgb(68,68,68);
+}
+.goltop span{
+	float: left;
+	margin: 0 6px;
+}
+.goltop .gocur{
+	margin: 0;
+}
+.golbottom{
+	float: left;
+	width: 974px;
+	height: 460px;
+}
+.golPro{
+	float: left;
+	width: 400px;
+	height: 400px;
+}
+.goprice{
+	float: right;
+	width: 523px;
+}
+.goname{
+	display: block;
+	color: rgb(68,68,68);
+	font-size: 18px;
+	background: url(../img/tmall.png)no-repeat left 5px;
+	padding-left: 22px;
+	height: 38px;
+}
+.goreason{
+	height: 57px;
+}
+.goreason span{
+	color: red;
+}
+.pricebox{
+	width: 500px;
+	height: 72px;
+	background: url(../img/show-price-bg.jpg) no-repeat center;
+	padding-left: 23px;
+	line-height: 72px;
+	font-size: 16px;
+}
+.quan{
+	float: left;
+	width: 210px;
+	color: rgb(237,20,91);
+}
+.quan span{
+	color: rgb(68,68,68);
+}
+.quan b{
+	font-weight: bold;
+	font-size: 24px;
+}
+.zai{
+	float: left;
+	color: rgb(187,172,187);
+}
+.feng{
+	margin-top: 20px;
+	width: 523px;
+	height: 38px;
+	color: rgb(142,135,135);
+	border-top: 1px dotted rgb(201,201,201);
+	border-bottom: 1px dotted rgb(201,201,201);
+}
+.fleft{
+	float: left;
+	width: 120px;
+	height: 17px;
+	padding-left: 20px;
+	margin-top: 10px;
+	border-right: 1px solid rgb(229,213,218);
+}
+.fright{
+	float: left;
+	line-height: 38px;
+}
+.fright i{
+	color: rgb(237,20,91);
+}
+.gobuy{
+	height: 105px;
+	margin-top: 52px;
+}
+.buysteptext{
+	float: left;
+	width: 30px;
+	height: 38px;
+	margin: 7px 18px 0 0;
+	color: #727272;
+	font-size: 14px;
+	line-height: 18px;
+}
+.buyfirst{
+	float: left;
+	width: 145px;
+	height: 52px;
+}
+.buyfirstp{
+	float: left;
+	width: 79px;
+	height: 52px;
+	background: rgb(242,235,207);
+	color: #ed145b;
+	text-align: center;
+}
+.buyfirstp i{
+	font-size: 12px;
+	display: block;
+	line-height: 24px;
+}
+.buyfirstp b{
+	font-size: 20px;
+	display: block;
+	line-height: 22px;
+	font-weight: normal;
+}
+.lingbtn{
+	float: left;
+	width: 45px;
+	height: 47px;
+	transition: font-size 0.3s;
+	color: #fff;
+	padding:5px 0 0 20px;
+	background: url(../img/coupon-btn.png)no-repeat center;
+}
+.lingbtn:hover{
+	font-size: 14px;
+}
+.lingbtn i{
+	display: block;
+	width: 45px;
+	height: 20px;
+}
+.buysecond{
+	position: relative;
+	float: left;
+	width: 68px;
+	height: 52px;
+}
+.buysecond span{
+	display: block;
+	width: 16px;
+	height: 10px;
+	background: url(../img/arrow-right.png)no-repeat center;
+	position: absolute;
+	left: 50%;
+	top: 23px;
+	transition: all .3s;
+}
+.buysecond:hover span{
+	transform: translateX(6px);
+}
+.buythird{
+	float: left;
+	width: 145px;
+	height: 52px;
+	line-height: 52px;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	background: #ed145b;
+	transition: font-size .3s;
+}
+.buythird:hover{
+	font-size: 16px;
+}
+.golike{
+	width: 523px;
+	height: 16px;
+	color: rgb(177,177,177);
+}
+.golike span{
+	float: left;
+	width: 305px;
+}
+.likecon{
+	float: left;
+}
+.goadd{
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: url(../img/icons_0_16.png)no-repeat 0 0;
+}
+.goqq{
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin: 0 8px;
+	background: url(../img/icons_0_16.png)no-repeat 0 -52px;
+}
+.goweibo{
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+	background: url(../img/icons_0_16.png)no-repeat 0 -104px;
+}
+.goweixin{
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: url(../img/icons_0_16.png)no-repeat 0 -1612px;
+}
+/*----------大家都在抢------------*/
+.goright{
+	float: right;
+	width: 125px;
+}
+.gortop{
+	position: relative;
+	width: 100%;
+	height: 1px;
+	background: #c8c8c8;
+	margin-top: 8px;
+}
+.gortop span{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: inline-block;
+	width: 76px;
+	height: 17px;
+	line-height: 16px;
+	margin-left: -38px;
+	margin-top: -8px;
+	text-align: center;
+	background: #fff;
+	color: rgb(117,117,117);
+}
+
+/*-----------图片上下轮播------------*/
+.gorcenter{
+	width: 125px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+.gorcenbox{
+	width: 125px;
+	height: 415px;
+	overflow: hidden;
+}
+
+.gorcenbox li{
+	width: 125px;
+	height: 415px;
+}
+
+.imgbox{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 125px;
+	margin-bottom: 20px;
+}
+.imgbox img{
+	display: block;
+	width: 130px;
+	height: 125px;
+	background: #efefef;
+}
+.imgbox span{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: block;
+	width: 100%;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	color: #2a2a2a;
+	background: rgba(255,255,255,.8);
+}
+
+.btnbox{
+	width: 100%;
+	height: 20px;
+	margin-top: 10px;
+	text-align: center;
+	overflow: hidden;
+}
+.btnbox a{
+	float: left;
+	width: 30px;
+	height: 20px;
+	vertical-align: middle;
+	background: url(../img/arrow-topbot.png) no-repeat;
+}
+.btnbox .upbtn{
+	background-position: -30px 0;
+	margin:0 15px 0 25px;
+}
+.btnbox .lowbtn{
+	background-position: 0 0;
+}
+
+
+
+
+
+
+
+

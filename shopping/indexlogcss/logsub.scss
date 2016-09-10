@@ -1,0 +1,233 @@
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Gudea', sans-serif;
+  background: url(../img/indexlog.jpg) no-repeat left top;
+  background-size: 100% 100%;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EA5C54 ', endColorstr='#bb6dec',GradientType=1 );
+}
+/*-------------word texiao------------------*/
+.fontmove{
+    width: 420px;   
+    height: 46px;
+    margin: 100px 0 0 50px;
+    overflow: hidden;
+    position: relative;
+}
+/*-----------submit----------*/
+.submove{
+    @extend.fontmove;
+    width: 320px;   
+    margin: 100px auto 0;
+}
+.fontmove .logol{
+    animation: font-move 16s cubic-bezier(1,0,0.29,0.73) infinite both;
+    
+    font-size: 32px;
+      color: rgb(254,2,113);
+      line-height: 50px;
+        height: 46px;
+        width: 100%;
+        position: absolute;
+        left: 420px;
+}
+.logol b{
+    font-weight: bold;
+    font-size: 40px;
+}
+@-webkit-keyframes font-move {
+    0%,10% {
+        left: 100%;
+    }
+    12%,22% {
+        left: 80%;
+    }
+    24%,36% {
+        left: 65%;
+    }
+    38%,50% {
+        left: 55%;
+    }
+    52%,64% {
+        left: 40%;
+    }
+    66%,78% {
+        left: 30%;
+    }
+    80%,92% {
+        left: 20%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+/*---------login box---------------------*/
+.logbox{
+    width: 345px;
+    height: 440px;
+    position: absolute;
+    top: 300px;
+    right: 50px;
+    padding-left: 15px;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #87CEFA 20%, #F0F8FF 100%);
+}
+.logtip{
+    width: 100%;
+    height: 60px;
+    font-style: italic;
+    font-size: 36px;
+    color: #BA55D3;
+    line-height: 60px;
+    border-bottom: 1px solid rgb(253,181,255);
+    margin-bottom: 20px;
+}
+.inpbox{
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+@mixin labin{
+    float: left;
+    color: #FF69B4;
+    border-radius: 5px;
+}
+.logbox label,.logbox input{
+    @include labin;
+}
+.logbox label{
+    font-size: 16px;
+}
+@mixin insty{
+     width: 152px;
+    height: 28px;
+    color: black;
+    font-size: 8px;
+    line-height: 24px;
+    padding-left: 8px;
+    margin: 0 0 15px 10px;
+}
+.logbox input{
+   @include insty;
+}
+.logbox .logran{
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    color: #000;
+    font-size: 24px;
+    border-radius: 8px;
+}
+@mixin pran{
+    float: left;
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: url(../img/ran.jpg) no-repeat center;
+    color: #333;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 8px;
+    margin-left: 50px;
+}
+.logbox .ranp{
+    @include pran;
+}
+@mixin log{
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #666;
+    color: #FF69B4;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 8px;
+    margin:40px 0 0 80px;
+    box-shadow: 0px 0px 10px #666;
+}
+.logbox .logbtn{
+    @include log;
+}
+.namesp,.pwdsp,.ransp{
+    display: block;
+    position: absolute;
+    left: 197px;
+    top: -60px;
+    width: 150px;
+    height: 80px;
+    line-height: 80px;
+    padding-left: 15px;
+    color: red;
+    background: url(../img/qipao.png) no-repeat 0 0;
+    background-size: 100% 100%;
+}
+.hide{
+    display: none;
+}
+
+/*submit box*/
+.subbox{
+    @extend.logbox;
+    width: 600px;
+    height: 520px;
+    left: 300px;
+    top: 250px;
+}
+
+.subbox label,.subbox input{
+    @include labin;
+}
+.subbox i{
+    color: red;
+    margin-right: 6px;
+}
+.subbox label{
+    font-size: 16px;
+    color: #BA55D3;
+    width: 98px;
+}
+.subbox input{
+     @include insty;
+}
+.subbox .logran{
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    color: #000;
+    font-size: 24px;
+    border-radius: 8px;
+}
+.subbox .ranp{
+     @include pran;
+}
+
+.subbox .subbtn{
+   @include log;
+   margin-top: 20px;
+}
+.subbox span{
+    float: left;
+    margin-left: 10px;
+    width: 250px;
+    height: 28px;
+    line-height: 28px;
+    color: #666;
+}
+.subbox .sransp{
+    width: 100px;
+}
+
+
+
+
+
+
+

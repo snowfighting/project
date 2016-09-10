@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="indexlogcss/logsub.css">
+		
+		<script src="js/jquery-3.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="loginjs/login.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="jsc"></div>
+		<div class="fontmove">
+			<h1 class="logol">欢迎进入<b>购物说登录界面</b></h1>
+		</div>
+		
+		<div class="logbox">
+			<p class="logtip">请登录</p>
+			<form>
+				<div class="inpbox">
+					<label for="logname">用户名：</label><input type="text" value="" id="logname" placeholder="请输入用户名" />
+					<span id="namesp" class="namesp hide">您的用户名不正确</span>
+				</div>
+				<div class="inpbox">
+					<label for="logpwd">密&nbsp;码：</label><input type="password" value="" id="logpwd" placeholder="请输入密码" />
+					<span id="pwdsp" class="pwdsp hide">您的密码不正确</span>
+				</div>
+				<div class="inpbox">
+					<input type="text" value="" id="logran" class="logran" />
+					<p class="ranp" id="ranp"></p>
+					<span id="ransp" class="ransp hide">您的验证码不正确</span>
+				</div>
+				
+				<input type="submit" value="登录" id="logbtn" class="logbtn"/>
+			</form>
+		</div>
+		
+		
+	</body>
+</html>

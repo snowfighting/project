@@ -29,7 +29,7 @@
   left:443px;
   top:95px;
 }
-.txt{
+.jingtxt{
   float: left;
   width:224px;
   height:32px;
@@ -37,7 +37,7 @@
   border:0;
   text-align: center;
 }
-.btn{
+.jingbtn{
   float: left;
   width:79px;
   height:34px;
@@ -45,6 +45,12 @@
   background: transparent;
   border:0;
   cursor: pointer;
+}
+/*proDetails banner-----------*/
+.bannerDetail{
+  @extend.banner;
+  height: 150px;
+  background: url("../img/detail1.jpg") no-repeat center;
 }
 /*-------------------*/
 .catlist{
