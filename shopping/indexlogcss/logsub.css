@@ -118,6 +118,7 @@ body {
   margin-left: 50px; }
 
 .logbox .logbtn, .subbox .logbtn {
+  display: block;
   width: 120px;
   height: 40px;
   line-height: 40px;

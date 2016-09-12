@@ -1,5 +1,8 @@
 $(function(){
 	
+	/**
+	 * 上下轮播
+	 */
 	var $gorcenter = $("#gorcenter")
 	var $ulbox = $("#gorcenbox");
 	var $ullist = $("#gorcenbox li");
@@ -7,24 +10,48 @@ $(function(){
 	var $upbtn = $("#upbtn");
 	var $lowbtn = $("#lowbtn");
 	
-	var activeIndex = 0;
+	var activeIndex = 0;//当前图片
+	var prevIndex = 0; //上一张图片
+	var timer = ""; //轮播图
 	
 	$upbtn.on("click",function(){
-		var $index = $(this).index();
+		activeIndex++;
+		if(activeIndex == len){
+			activeIndex=0;
+		}
 		
-		$ullist[$index].animate({"top":"-415px"},2000);
-		$ullist[$index+1].animate({"top":0},2000);
-		activeIndex = $index;
+		$ullist.eq(activeIndex).css("top","100%").removeClass("phide");
+		$ullist.eq(prevIndex).animate({"top":"-100%"},400);
+		$ullist.eq(activeIndex).animate({"top":"0%"},400);
+		
+		prevIndex = activeIndex;
 	})
 	$lowbtn.on("click",function(){
-		var $index = $(this).index();
+		activeIndex--;
+		if(activeIndex == -1){
+			activeIndex=len-1;
+		}
 		
-		$ullist[$index].animate({"top":"415px"},2000);
-		$ullist[$index-1].animate({"top":0},2000);
+		$ullist.eq(activeIndex).css("top","-100%").removeClass("phide");
+		$ullist.eq(prevIndex).animate({"top":"100%"},400);
+		$ullist.eq(activeIndex).animate({"top":"0%"},400);
 		
-		activeIndex = $index;
+		prevIndex = activeIndex;
 	})
 	
+	autoplay();
+	function autoplay(){
+		timer = setInterval(function(){
+			$upbtn.click();
+		},2000);
+	}
+	
+	$gorcenter.mouseenter(function(){
+		clearInterval(timer);
+	})
+	$gorcenter.mouseleave(function(){
+		autoplay();
+	})
 	
 	$("#p1").click(function(){
 		alert("p1")

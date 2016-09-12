@@ -30,15 +30,15 @@ $(function(){
 	
 	$logname.on("blur",function(){
 		$.ajax({
-			type:"get",
-			url:"../../user/CheckUserNameGet",
+			type:"post",
+			url:"../../product/GetProductById_post",
 			dataType : "json",
 			data:{
-				"Name":$logname.val()
+				"Id":$logname.val()
 			},
 			success:function(data){
-				alert(1)
-				if(data == 1){
+				var ulog = eval("("+data.Data+")")
+				if(ulog.uname == $logname.val()){
 					console.log("用户名成功");
 					$("#namsp").css("display","none");
 				}else{
@@ -51,15 +51,15 @@ $(function(){
 	$logpwd.on("blur",function(){
 		$.ajax({
 			type:"post",
-			url:"../../user/login",
-			async:false,
+			url:"../../product/GetProductById_post",
 			dataType:"json",
 			data:{
-				"Name":$logname.val(),
-				"password":$logpwd.val()
+				"Id":$logname.val()
 			},
 			success:function(data){
-				if(data == 1){
+				console.log(eval("(" + data.Data + ")"));
+				var user = eval("(" + data.Data + ")");
+				if(user.upwd == $logpwd.val()){
 					$("#pwdsp").css("display","none");
 					console.log("密码成功");
 				}else{
@@ -78,7 +78,7 @@ $(function(){
 		}
 	})
 	
-	$("#logbtn").on("click",function(){
+	$("#logbtn").click(function(){
 		location.href = "index.html";
 	})
 	

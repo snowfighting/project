@@ -5,6 +5,9 @@
 		<title></title>
 		<link rel="stylesheet" href="../css/reset.css" type="text/css" />
 		<link rel="stylesheet" href="../mcss/addPro.css" type="text/css" />
+		
+		<script src="../js/jquery-3.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../mjs/addProduct.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<!--*************-->
@@ -16,41 +19,44 @@
 		</div>
 		<!--*************-->
 		<div class="addbox">
-			<form method="post"> 
-				<label for="id">id:</label> 
-				<input type="text" name="id" required placeholder="id" />
+			<form> 
+				<label for="pid">id:</label> 
+				<input type="text" name="id" required placeholder="id" id="pid"/>
+				
+				<label for="type">type:</label> 
+				<input type="text" name="type" required placeholder="type" id="type"/>
 				
 				<label for="name">商品名:</label> 
-				<input type="text" name="name" required placeholder="商品名" />
+				<input type="text" name="name" required placeholder="商品名" id="name"/>
 				
 				<label for="imgsrc">图片地址:</label> 
-				<input type="text" name="imgsrc" required placeholder="图片地址" />
+				<input type="text" name="imgsrc" required placeholder="图片地址" id="imgsrc"/>
 				
 				<label for="saleprice">在售价:</label> 
-				<input type="text" name="saleprice" required placeholder="在售价" />
+				<input type="text" name="saleprice" required placeholder="在售价" id="saleprice"/>
 				
 				<label for="xiaprice">券后价:</label> 
-				<input type="text" name="xiaprice" placeholder="券后价" />
+				<input type="text" name="xiaprice" placeholder="券后价" id="xiaprice"/>
 				
 				<label for="neibuquan">内部券:</label> 
-				<input type="text" name="neibuquan" placeholder="内部券面值" />
+				<input type="text" name="neibuquan" placeholder="内部券面值" id="neibuquan" />
 		
 				<label for="deadline">结束日期:</label> 
-				<input type="text" name="deadline" placeholder="内部券结束日期" />
+				<input type="text" name="deadline" placeholder="内部券结束日期" id="deadline" />
 		
 				<label for="surplus">剩余优惠券:</label> 
-				<input type="text" name="surplus" placeholder="剩余优惠券的数量">
+				<input type="text" name="surplus" placeholder="剩余优惠券的数量" id="surplus"/>
 		
 				<label for="receive">已领取优惠券:</label> 
-				<input type="text" name="receive" placeholder="已领取优惠券的数量" />
+				<input type="text" name="receive" placeholder="已领取优惠券的数量"  id="receive"/>
 		
 				<label for="remadays">剩余天数:</label> 
-				<input type="text" name="remadays" placeholder="活动剩余天数" />
+				<input type="text" name="remadays" placeholder="活动剩余天数"  id="remadays"/>
 				
 				<label for="alreasale">已售商品数量:</label> 
-				<input type="text" name="alreasale" placeholder="已售商品数量" />
+				<input type="text" name="alreasale" placeholder="已售商品数量" id="alreasale" />
 			
-				<input type="submit" value="增加商品" />
+				<input type="submit" value="增加商品" id="addBtn"/>
 			</form>
 
 		</div>

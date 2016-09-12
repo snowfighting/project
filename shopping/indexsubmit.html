@@ -5,9 +5,17 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="indexlogcss/logsub.css">
-		
+		<link rel="stylesheet" type="text/css" href="indexlogcss/xcConfirm.css"/>
 		<script src="js/jquery-3.1.0.js" type="text/javascript" charset="utf-8"></script>
 		<script src="loginjs/submit.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="loginjs/xcConfirm.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$("#subbtn").click(function(){
+						var txt=  "恭喜您注册成功，点击进入购物说^_^";
+						window.wxc.xcConfirm(txt, window.wxc.xcConfirm.typeEnum.success);
+			});
+		</script>
 	</head>
 	<body>
 		<div id="jsc"></div>
@@ -19,12 +27,12 @@
 			<p class="logtip">欢迎注册</p>
 			<form>
 				<div class="inpbox">
-					<label for="subid"><i>*</i>id：</label><input type="text" value="" id="subid" required placeholder="请输入id" />
-					<span id="sidsp" class="sidsp"></span>
-				</div>
-				<div class="inpbox">
 					<label for="subname"><i>*</i>用户名：</label><input type="text" value="" id="subname" required placeholder="请输入用户名" />
 					<span id="snamesp" class="snamesp">6-20位小写字符、数字、下划线、连接线</span>
+				</div>
+				<div class="inpbox">
+					<label for="subid"><i>*</i>id：</label><input type="text" value="" id="subid" required placeholder="请输入id" />
+					<span id="sidsp" class="sidsp">和用户名相同</span>
 				</div>
 				<div class="inpbox">
 					<label for="subtel"><i>*</i>手机号：</label><input type="text" value="" id="subtel" required placeholder="请输入用户名" />
@@ -32,11 +40,11 @@
 				</div>
 				<div class="inpbox">
 					<label for="subpwd"><i>*</i>密&nbsp;码：</label><input type="password" value="" id="subpwd" required placeholder="请输入密码" />
-					<span id="spwdsp" class="spwdsp">密码不能为空</span>
+					<span id="spwdsp" class="spwdsp">6-16位英文(区分大小写)、数字、字符的组合</span>
 				</div>
 				<div class="inpbox">
 					<label for="agapwd"><i>*</i>确认密码：</label><input type="password" value="" id="agapwd" required placeholder="请输入密码" />
-					<span id="sagasp" class="sagasp">6-16位英文(区分大小写)、数字、字符的组合</span>
+					<span id="sagasp" class="sagasp"></span>
 				</div>
 				<div class="inpbox">
 					<label for="identify"><i>*</i>验证码：</label><input type="text" value="" id="identify" required class="identify" placeholder="请输入验证码" />
