@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/musci.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="musbox">
+				<div class="musrotate">
+					<img src="img/img.jpg" />
+				</div>
+				<img id="tiao" class="tactive" src="img/cd_tou.png" />
+			</div>
+			<div class="musname">
+				<h2 id="songName">演员</h2>
+				<div class="shen">
+					<span>薛之谦</span>
+					<i>专辑:</i>
+					<i id="i2">绅士</i>
+				</div>
+				<div class="iconbox">
+					<i class="iconfont" id="pre">&#xe62a;</i>
+					<i class="iconfont" id="control">&#xe612;</i>
+					<i class="iconfont" id="next">&#xe62b;</i>
+					<i class="iconfont" id="random">&#xe600;</i>
+					<i class="iconfont" id="refresh">&#xe63e;</i>
+					<i class="iconfont yin">&#xe60b;</i>
+					<b id="volume" class="liang"><i class="col"></i></b>
+				</div>
+				<div class="jin">
+					<span id="currentTime">00:00</span>
+					<span id="totalTime">/4:21</span>
+					<audio id="auto" class="music" src="music/演员 - 薛之谦.mp3"></audio>
+					<input type="range" min="0" max="265" id="range" value="0" />
+				</div>
+			</div>
+			<ul class="muslist">
+				<li>
+					<span id="musicname">丑八怪</span>
+					<span><b>薛之谦 </b><i>专题: </i><i>绅士</i></span>
+				</li>
+				<li>
+					<span id="musicname">绅士</span>
+					<span><b>薛之谦 </b><i>专题: </i><i>绅士</i></span>
+				</li>
+				<li>
+					<span id="musicname">一半</span>
+					<span><b>薛之谦 </b><i>专题: </i><i>绅士</i></span>
+				</li>
+				<li>
+					<span id="musicname">认真的雪</span>
+					<span><b>薛之谦 </b><i>专题: </i><i>绅士</i></span>
+				</li>
+			</ul>
+		</div>
+
+		<script src="js/jquery-3.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/music.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

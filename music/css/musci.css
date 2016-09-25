@@ -1,0 +1,217 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	background: -webkit-linear-gradient(left,rgb(104,1,185) 0%,rgb(187,36,183) 100%);
+	-webkit-background-origin: padding-box;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.musbox{
+	float: left;
+	width: 600px;
+	height: 432px;
+	position: relative;
+}
+.musrotate{
+	position: relative;
+	box-sizing: border-box;
+	width: 355px;
+	height: 355px;
+	margin: 56px 0 0 80px;
+	border-radius: 50%;
+	background: url(../img/cd.png) no-repeat center;
+	box-shadow: 0 0 20px rgb(80,1,140);
+	/*transition:all 2s linear;*/
+}
+.active{
+	animation: rotateDiv 1s infinite;
+	-webkit-animation:rotateDiv 2s linear infinite;
+}
+@-webkit-keyframes rotateDiv{
+	from{}
+	to{
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+.musname .txt{
+	font-size: 20px;
+	color: #f66;
+}
+.tactive{
+	transform-origin: left top; 
+	-webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
+	-o-transform: rotate(-20deg);
+	transform: rotate(-20deg);
+}
+.musrotate img{
+	width: 178px;
+	height: 178px;
+	border-radius: 50%;
+	position: absolute;
+	left: 88px;
+	top: 88px;
+}
+.musbox img[id=tiao]{
+	position: absolute;
+	left: 380px;
+	top: 60px;
+}
+.musname{
+	float: left;
+	margin-top: 202px;
+	width: 335px;
+	height: 180px;
+	color: #fff;
+}
+.musname h2{
+	display: block;
+	height: 85px;
+	font-size: 45px;
+	text-align: center;
+}
+.shen{
+	height: 40px;
+	text-align: center;
+	padding-left: 100px;
+}
+.shen span{
+	float: left;
+	font-size: 24px;
+}
+.shen i{
+	font-size: 18px;
+	margin: 6px 0 0 9px;
+	float: left;
+}
+.iconbox{
+	height: 28px;
+	padding-left: 28px;
+	position: relative;
+	text-align: center;
+}
+.iconbox i{
+	float: left;
+	font-size: 20px;
+	color: #fff;
+	position: absolute;
+	left: 20px;
+}
+.iconbox i:hover{
+	cursor: pointer;
+}
+.iconbox i:nth-child(2){
+	left: 45px;
+	top: 3px;
+}
+.iconbox i:nth-child(3){
+	left: 70px;
+}
+.iconbox i:nth-child(4){
+	left: 229px;
+}
+.iconbox i:nth-child(5){
+	left: 256px;
+}
+.iconbox i:nth-child(6){
+	left: 286px;
+}
+
+.liang{
+	position: absolute;
+	left:290px;
+	top: -92px;
+	width: 12px;
+	height: 96px;
+	box-sizing: border-box;
+	border: 3px solid rgb(255,250,255);
+	background: rgb(223,209,206);
+	border-radius: 10px;
+	display: none;
+}
+.iconbox .col{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 6px;
+	height: 0;
+	border-radius: 10px;
+	background: rgb(255,75,43);
+}
+
+
+.jin{
+	height: 15px;
+	position: relative;
+}
+span[id$=Time]{
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: #fff;
+}
+span[id=totalTime]{
+	left: 30px;
+	color: #fff;
+}
+input[type=range]{
+	position: absolute;
+	top: 0px;
+	left: 72px;
+	width: 265px;
+	z-index: 99;
+}
+
+
+.muslist{
+	width: 710px;
+	height: 75px;
+	position: absolute;
+	left: 212px;
+	top: 495px;
+}
+.muslist li{
+	width: 153px;
+	height: 75px;
+	overflow: hidden;
+	border-radius: 8px;
+	color: #fff;
+	float: left;
+	
+	margin-left: 16px;
+}
+.muslist li:hover{
+	cursor: pointer;
+}
+.muslist span{
+	display: block;
+	height: 37px;
+	text-align: center;
+	/*opacity: 0.7;*/
+}
+.muslist span:nth-child(1){
+	font-size: 24px;
+	line-height: 44px;
+	border: 1px solid rgb(160,80,204);
+	background: rgb(160,80,204);
+}
+.muslist span:nth-child(2){
+	display: block;
+	height: 37px;
+	border: 1px solid rgb(116,2,179);
+	background: rgb(116,2,179);
+	-webkit-box-shadow: 5px 5px 20px rgb(94,0,149);
+	-moz-box-shadow: 5px 5px 20px rgb(94,0,149);
+	box-shadow: 5px 5px 20px rgb(94,0,149);
+}
+.muslist b{
+	font-size: 14px;
+}
