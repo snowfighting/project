@@ -2,6 +2,7 @@ $width:100%;
 $colorV:#f00582;
 @mixin widMar($width:1200px){
   width:$width;
+  overflow: hidden;
   margin:0 auto;
 }
 @mixin height($height:25px){
@@ -255,23 +256,17 @@ $colorV:#f00582;
   float: left;
   width:580px;
   height:270px;
-  margin-right:35px;
+  margin:0 35px 20px 0;
   border:1px solid #e0e0e0;
 }
-.box{
-    transition: all .5s;
-}
-.redbor:hover {
-  border: 1px solid red; 
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
-}
+
 
 .miaodl dt{
   float: left;
+  width:270px;
+  height:270px;
+}
+.miaodl dt img{
   width:270px;
   height:270px;
 }
@@ -366,7 +361,7 @@ $colorV:#f00582;
 }
 
 
-/*----------特卖精选---------------*/
+/*----------jingxuantemai---------------*/
 .temai{
     @include widMar();
 }
@@ -388,9 +383,10 @@ $colorV:#f00582;
     width: 1230px;
 }
 .tedl{
+    float: left;
     width: 285px;
     height: 387px;
-    margin-right: 18px;
+    margin:0 18px 15px 0;
     border: 1px solid #ececec;
 }
 .tedt{
@@ -408,7 +404,8 @@ $colorV:#f00582;
 }
 .tao{
     display: block;
-    height: 28px;
+    height: 16px;
+    overflow: hidden;
     color: #666;
 }
 .tao i{
@@ -464,6 +461,7 @@ $colorV:#f00582;
 .zhidl{
     @extend .tedl;
     height: 407px;
+    margin-bottom: 15px;
 }
 .zhidl dt{
     @extend .tedt;
@@ -473,6 +471,7 @@ $colorV:#f00582;
     height: 122px;
 }
 .youp{
+    margin-top: 8px;
     height: 30px;
     color: #757575;
 }

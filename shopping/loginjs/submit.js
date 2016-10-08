@@ -1,5 +1,4 @@
 $(function(){
-	var flag = false;
 	
 	/**
 	 * 判断用户名
@@ -23,22 +22,16 @@ $(function(){
 				type:"post",
 				url:"../../product/GetProductById_post",
 				data:{
-					"id":$("#subid").val()
+					"id":$("#subname").val()
 				},
 				
-				/*type:"get",
-				url:"../../user/CheckUserNameGet",
-				data:{
-					"Name":$("#subname").val()
-				},*/
 				success:function(result){
+					console.log(result)
 					if(result != null){
-						flag = false;
 						$("#snamesp").html("用户已存在");
 						$("#snamesp").css("color","red");
 						$(this).css("border","1px solid red");
 					}else{
-						flag = true;
 						console.log("用户名可用");
 						$("#snamesp").html("");
 						$("#snamesp").css("background","url(img/dui.png)no-repeat left center");
@@ -59,12 +52,10 @@ $(function(){
 	 */
 	$("#subid").on("blur",function(){
 		if($(this).val() != $("#subname").val()){
-			flag = false;
 			$("#sidsp").html("id格式不正确");
 			$("#sidsp").css("color","red");
 			$(this).css("border","1px solid red");
 		}else{
-			flag = true;
 			$("#sidsp").html("");
 			$("#sidsp").css("background","url(img/dui.png)no-repeat left center");
 			$(this).css("border","0");
@@ -82,12 +73,10 @@ $(function(){
 	$("#subtel").on("blur",function(){
 		var isTrue = checkTel($(this).val());
 		if(!isTrue){
-			flag = false;
 			$("#stelsp").html("手机号格式不正确");
 			$("#stelsp").css("color","red");
 			$(this).css("border","1px solid red");
 		}else{
-			flag = true;
 			$("#stelsp").html("");
 			$("#stelsp").css("background","url(img/dui.png)no-repeat left center");
 			$(this).css("border","0");
@@ -105,12 +94,10 @@ $(function(){
 	$("#subpwd").on("blur",function(){
 		var isTrue = checkPwd($(this).val());
 		if(!isTrue){
-			flag = false;
 			$("#spwdsp").html("密码格式不正确");
 			$("#spwdsp").css("color","red");
 			$(this).css("border","1px solid red");
 		}else{
-			flag = true;
 			$("#spwdsp").html("");
 			$("#spwdsp").css("background","url(img/dui.png)no-repeat left center");
 			$(this).css("border","0");
@@ -122,12 +109,10 @@ $(function(){
 	$("#agapwd").on("blur",function(){
 		if(checkPwd($(this).val())){
 			if($(this).val() != $("#subpwd").val()){
-				flag = false;
 				$("#sagasp").html("两次密码不一致");
 				$("#sagasp").css("color","red");
 				$(this).css("border","1px solid red");
 			}else{
-				flag = true;
 				$("#sagasp").html("");
 				$("#sagasp").css("background","url(img/dui.png)no-repeat left center");
 				$(this).css("border","0");
@@ -160,12 +145,10 @@ $(function(){
 	 */
 	$("#identify").on("blur",function(){
 		if($(this).val() != ranstr){
-			flag = false;
 			$("#sransp").html("验证码不正确");
 			$("#sransp").css("color","red");
 			$(this).css("border","1px solid red");
 		}else{
-			flag = true;
 			$("#sransp").html("");
 			$("#sransp").css("background","url(img/dui.png)no-repeat left center");
 			$(this).css("border","0");
@@ -177,7 +160,7 @@ $(function(){
 		 var uName=$("#subname").val();
          var uPwd=$("#subpwd").val();
          var uTel=$("#subtel").val();
-
+		var flag = 0;
          var dataJsonOb={
                 "id":uId,
                 "uname":uName,
@@ -187,32 +170,26 @@ $(function(){
             var dataJsonStr=JSON.stringify(dataJsonOb);
 		
 		$.ajax({
+				type:"post",
                 url:"../../product/CreateUpdateProduct_post",
+                async:false,
                 data:{
                     "id":uId,
                     "datajson":dataJsonStr,
                     "Type":"userInfo"
                 },
                 success:function(result){
-                    if(result==1){
-//                      alert("创建成功");
-						
-						
-                    }else{
-                        alert("创建失败");
-                    }
+                 window.open("/httpview/shopping/index.html");
+                    
                 },
-                dataType:"json",
-                type:"post",
-                /*complete:function(){
-                	if(flag == true){
-							$("body").append("<script src='loginjs/xcConfirm.js' type='text/javascript' charset='utf-8'></script>")
-		                    var txt=  "恭喜您注册成功，点击进入购物说^_^";
-							window.wxc.xcConfirm(txt, window.wxc.xcConfirm.typeEnum.success);
-						}
-                }*/
+               
+                dataType:"json"
          })
-
+		
+		function newWin(){
+			window.open("/httpview/shopping/index.html","_blank");
+		}
+		
 	});
 	
 	

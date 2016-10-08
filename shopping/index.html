@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="css/index.css" type="text/css"/>
     <link rel="stylesheet" href="css/banner.css" type="text/css"/>
 
+	<script type="text/javascript" src="js/jquery-3.1.0.js" ></script>
+	<script src="js/jquery.params.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/main1.js"></script>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		
 </head>
 <body>
 <!--*************************-->
@@ -21,8 +26,8 @@
             <a href="#" class="shouc">加入收藏</a>
             <a href="#" class="diffcol">遇到购物问题？ 联系我</a>
             
-            <a href="#" class="indexlogin">登录</a>
-            <a href="#" class="indexsubmit">注册</a>
+            <a href="/httpview/shopping/indexlog.html" class="indexlogin">登录</a>
+            <a href="/httpview/shopping/indexsubmit.html" class="indexsubmit">注册</a>
         </div>
     </div>
 </div>
@@ -32,8 +37,8 @@
     <h1 class="log"></h1>
     <div class="headsearch">
         <form>
-            <input type="text" value="搜优惠券" class="txt"/>
-            <input type="button" value="搜索" class="btn">
+            <input type="text" value="搜优惠券" class="soutxt"/>
+            <input type="button" value="搜索" class="soubtn">
         </form>
     </div>
     <div class="headright">
@@ -48,23 +53,23 @@
     <div class="navbox">
         <ul class="navUl">
             <li class="posili">
-                <a href="#" class="navfirst">
+                <a href="/httpview/shopping/index.html" class="navfirst">
                     <i class="navtb1"></i>今日上新
                  </a>
                 <ul class="navlist">
-                    <li class="na"><a href="#"><span class="n1"></span>服装</a></li>
-                    <li class="na2 na"><a href="#"><span class="n2"></span>母婴 <i></i></a></li>
-                    <li class="na"><a href="#"><span class="n3"></span>化妆品</a></li>
-                    <li class="na4 na"><a href="#"><span class="n4"></span>居家、日用 <i></i></a></li>
-                    <li class="na"><a href="#"><span class="n5"></span>鞋包、配饰</a></li>
-                    <li class="na"><a href="#"><span class="n6"></span>美食</a></li>
-                    <li class="na"><a href="#"><span class="n7"></span>文体、车品</a></li>
-                    <li class="na"><a href="#"><span class="n8"></span>数码、家电</a></li>
+                    <li class="na"><a href="/httpview/shopping/lingquan.html?name=fuzhuang"><span class="n1"></span>服装</a></li>
+                    <li class="na2 na"><a href="/httpview/shopping/lingquan.html?name=muying"><span class="n2"></span>母婴 <i></i></a></li>
+                    <li class="na"><a href="/httpview/shopping/lingquan.html?name=huazhuangpin"><span class="n3"></span>化妆品</a></li>
+                    <li class="na4 na"><a href="/httpview/shopping/lingquan.html?name=jujia"><span class="n4"></span>居家、日用 <i></i></a></li>
+                    <li class="na"><a href="/httpview/shopping/lingquan.html?name=xiebao"><span class="n5"></span>鞋包、配饰</a></li>
+                    <li class="na"><a href="/httpview/shopping/lingquan.html?name=meishi"><span class="n6"></span>美食</a></li>
+                    <li class="na"><a href="/httpview/shopping/lingquan.html?name=wenti"><span class="n7"></span>文体、车品</a></li>
+                    <li class="na"><a href="/httpview/shopping/lingquan.html?name=shuma"><span class="n8"></span>数码、家电</a></li>
                 </ul>
             </li>
-            <li><a href="#">领券优惠直播</a></li>
-            <li><a href="#" class="navthird">超级人气榜<i class="navtb2"></i></a></li>
-            <li><a href="#">特卖精选</a></li>
+            <li><a href="/httpview/shopping/lingquan.html">领券优惠直播</a></li>
+            <li><a href="/httpview/shopping/renqi.html" class="navthird">超级人气榜<i class="navtb2"></i></a></li>
+            <li><a href="/httpview/shopping/jing.html">特卖精选</a></li>
         </ul>
     </div>
 </div>
@@ -134,6 +139,8 @@
     小编说：这些年，小猪每天坚持为大家更新超值宝贝...感谢您多年来的支持！无论再苦再累，小猪都会坚持下去！
     因为您的信任，我们会带着这份责任，做到极致...
 </div>
+
+<div class="wrap" id="wrap">
 <!--**********领券秒杀精选***************-->
 <div class="miaosha">
     <div class="miaotop">
@@ -147,25 +154,9 @@
     </div>
 
     <div class="miaobottom">
-        <div class="miaobox">
-            <dl class="miaodl redbor box">
-                <dt><img src="img/TB1zJXMNXXXXXccaXXXXXXXXXXX_!!0-item_pic.jpg_270x270.jpg" /></dt>
-                <dd>
-                    <h2 class="miaoname">name</h2>
-                    <p class="miaotimer">内部券<b>20</b>元，过期时间 2016-9-7</p>
-                    <p class="miaonum">优惠券剩余<i>1833</i>张，已领取 167 张</p>
-                    <div class="miaoprice"><p class="xiadan">下单价￥<b>39</b></p> <p class="zaishou">在售价￥59</p></div>
-                    <div class="liucheng">
-                        <sapn class = "buy">购买流程：</sapn>
-                        <a class="dot">点我领券</a>
-                        <span class="dayu">&gt;</span>
-                        <a class="dot">点击下单</a>
-                    </div>
-                </dd>
-            </dl>
-            <dl class="miaodl">
-
-            </dl>
+        <div class="miaobox" id="indexMiaoBox">
+            
+            
         </div>
     </div>
 
@@ -185,15 +176,8 @@
     </div>
     
     <div class="tebottom">
-    	<div class="tebbox">
-	    	<dl class="tedl redbor box"> 
-	    		<dt class="tedt"><img src="img/TB1BnAILVXXXXbnXFXXYXGcGpXX_M2.SS2_290x290.jpg" /> </dt>
-	    		<dd class="tedd">
-	    			<a href="#" class="tao"><i><img src="img/taobao.png" /></i>春秋季新款韩版bf棒球帽女装学生原宿</a>
-	    			<p class="youpin"><b>￥79</b> <span>目前已售&nbsp;<i>557</i></span></p>
-	    			<p class="qiang"><span>剩余5天</span> <i>去抢购></i></p>
-	    		</dd>
-	    	</dl>
+    	<div class="tebbox" id="indexTeBox">
+	    	
     	</div>
     </div>
 </div>
@@ -202,7 +186,7 @@
 <div class="zhibo">
 	 <div class="miaotop">
         <div class="miaotleft">
-            <p class="leftp">特卖精选</p>
+            <p class="leftp">领券优惠直播</p>
             <span class="leftspan">/人气款、评价好、性价比高/</span>
         </div>
         <div class="teright">
@@ -211,17 +195,31 @@
     </div>
     
     <div class="zhibottom">
-    	<div class="zhibox">
-	    	<dl class="zhidl redbor box"> 
-	    		<dt><img src="img/TB1BnAILVXXXXbnXFXXYXGcGpXX_M2.SS2_290x290.jpg" /> </dt>
-	    		<dd>
-	    			<a href="#" class="tao"><i><img src="img/taobao.png" /></i>春秋季新款韩版bf棒球帽女装学生原宿</a>
-	    			<p class="youp">优惠券<i>80</i>元，已有<b>36</b>人购买</p>
-	    			<p class="sale">券后价￥<b>98</b>元，正常售价<i>178</i></p>
-	    		</dd>
-	    	</dl>
+    	<div class="zhibox" id="indexZhiBox">
+	    	
     	</div>
     </div>
+</div>
+</div>
+
+<!--**********分页***************-->
+<div class="fenye">
+	<ul class="pageList" id="page">
+		<li class="prev" id="prev">上一页</li>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li class="next" id="next">下一页</li>
+				
+	</ul>
+	<div class="last">
+		<span>共5页</span>
+		<p class="p1">到第<input class="txt" id="txt" type="text" value="1">页 </p>
+		<input type="button" id="btn" class="btn" value="确定" />
+	</div>
+
 </div>
 
 
@@ -237,14 +235,13 @@
     	<a href="http://www.miitbeian.gov.cn/" target="_blank" >粤ICP备15089449号-2</a>&nbsp;&nbsp;
     	<a href="http://wpa.qq.com/msgrd?v=3&uin=184182000&site=qq&menu=yes" title="联系我帮你解答" class="diffcor">^_^亲遇到问题，联系我帮你处理哈</a>
     </div>
-    <div class="toTop">&#xe60c;</div>
+    <div class="toTop" id="toTop">&#xe60c;</div>
 </div>
 
 
 
-<script type="text/javascript" src="js/jquery-3.1.0.js" ></script>
-<script type="text/javascript" src="js/main1.js"></script>
-<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+
+
 
 </body>
 </html>

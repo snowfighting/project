@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/reset.css" type="text/css"/>
      <link rel="stylesheet" href="css/icon.css" type="text/css" />
     <link rel="stylesheet" href="css/public.css" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
     <link rel="stylesheet" href="css/sibpublic.css" type="text/css"/>
 </head>
 <body>
@@ -26,8 +27,8 @@
     <h1 class="log"></h1>
     <div class="headsearch">
         <form>
-            <input type="text" value="搜优惠券" class="txt"/>
-            <input type="button" value="搜索" class="btn">
+            <input type="text" value="搜优惠券" class="soutxt"/>
+            <input type="button" value="搜索" class="soubtn">
         </form>
     </div>
     <div class="headright">
@@ -42,13 +43,13 @@
     <div class="navbox">
         <ul class="navUl">
             <li class="posili">
-                <a href="#" class="navfirst">
+                <a href="/httpview/shopping/rindex.html" class="navfirst">
                     <i class="navtb1"></i>今日上新
                 </a>
             </li>
-            <li><a href="#">领券优惠直播</a></li>
-            <li><a href="#" class="navthird">超级人气榜<i class="navtb2"></i></a></li>
-            <li><a href="#">特卖精选</a></li>
+            <li><a href="/httpview/shopping/lingquan.html">领券优惠直播</a></li>
+            <li><a href="/httpview/shopping/renqi.html" class="navthird">超级人气榜<i class="navtb2"></i></a></li>
+            <li><a href="/httpview/shopping/jing.html">特卖精选</a></li>
         </ul>
     </div>
 </div>
@@ -107,6 +108,45 @@
     </ul>
 </div>
 
+<!--**********精选特卖***************-->
+<div class="temai">
+	 <div class="miaotop">
+        <div class="miaotleft">
+            <p class="leftp">特卖精选</p>
+            <span class="leftspan">/人气款、评价好、性价比高/</span>
+        </div>
+        <div class="teright">
+         	   <a href="#">查看更多</a> >>
+        </div>
+    </div>
+    
+    <div class="tebottom">
+    	<div class="tebbox" id="indexTeBox">
+	    	
+    	</div>
+    </div>
+</div>
+
+<!--**********分页***************-->
+<div class="fenye">
+	<ul class="pageList" id="page">
+		<li class="prev" id="prev">上一页</li>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li class="next" id="next">下一页</li>
+				
+	</ul>
+	<div class="last">
+		<span>共5页</span>
+		<p class="p1">到第<input class="txt" id="txt" type="text" value="1">页 </p>
+		<input type="button" id="btn" class="btn" value="确定" />
+	</div>
+
+</div>
+
 
 <!--***********footer**************-->
 <div class="footer">
@@ -123,6 +163,8 @@
     <div class="toTop">&#xe60c;</div>
 </div>
 
-
+<script src="js/jquery-3.1.0.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.params.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jing.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

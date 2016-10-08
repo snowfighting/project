@@ -5,17 +5,9 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="indexlogcss/logsub.css">
-		<link rel="stylesheet" type="text/css" href="indexlogcss/xcConfirm.css"/>
 		<script src="js/jquery-3.1.0.js" type="text/javascript" charset="utf-8"></script>
 		<script src="loginjs/submit.js" type="text/javascript" charset="utf-8"></script>
 		
-		<script src="loginjs/xcConfirm.js" type="text/javascript" charset="utf-8"></script>
-		<script>
-			$("#subbtn").click(function(){
-						var txt=  "恭喜您注册成功，点击进入购物说^_^";
-						window.wxc.xcConfirm(txt, window.wxc.xcConfirm.typeEnum.success);
-			});
-		</script>
 	</head>
 	<body>
 		<div id="jsc"></div>
@@ -56,6 +48,18 @@
 			</form>
 		</div>
 		
+		<div class="carbox" id="carbox"></div>
+
+		<div class="car" id="car">
+			<div class="addOk">
+				<div class="addTop">
+					<i class="addui"></i>恭喜您注册成功！
+				</div>
+				<div class="go">
+					<a href="" class="jiebtn" id="goCar">进入首页</a>
+				</div>
+			</div>
+		</div>	
 		
 	</body>
 </html>

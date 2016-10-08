@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/><br />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shoppingCar.css"/>
+		<script src="js/jquery-3.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<script src="js/jquery.params.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/shoppingCar.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="headnav">
+			<a class="index" href="/httpview/shopping/index.html">购物说首页</a>
+			<ul class="headright">
+				<li>
+					<a href="/httpview/shopping/indexsubmit.html" class="carsub">注册</a>
+					<a href="/httpview/shopping/indexlog.html" class="carlog">登录</a>
+				</li>
+				<li>
+					<i></i>我的订单
+				</li>
+				<li>
+					<b></b>购物车
+				</li>
+				<li>
+					帮助中心
+				</li>
+				<li>
+					<a href="#" class="carnobor">商家后台</a>
+				</li>
+			</ul>
+		</div>
+		<div class="carcenter">
+			<div class="carcentbox">
+				<div class="carcentop"></div>
+				<div class="carbtbox">
+					<p>全部商品</p>
+				</div>
+				
+				<div class="goodsbox">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th class="th1">
+									<input type="checkbox" id="all" name="goods" value="" />
+									<label for="all" id="allselect">全选</label>
+								</th>
+								<th class="th2">商品</th>
+								<th class="th3">单价（元）</th>
+								<th class="th4">数量</th>
+								<th class="th5">小计（元）</th>
+								<th class="th6">操作</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+				<div class="jiesuan">
+					<div class="jieright">
+						<p class="jiemoney">总计：<span class="moneyred">￥<i id="moneyred"></i></span></p>
+						<p class="jiebox">结&nbsp;&nbsp;算</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</body>
+</html>

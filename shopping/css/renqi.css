@@ -7,9 +7,10 @@
   width: 1230px; }
 
 .zhidl {
+  float: left;
   width: 285px;
   height: 407px;
-  margin-right: 18px;
+  margin: 0 18px 15px 0;
   border: 1px solid #ececec; }
 
 .zhidl dt {
@@ -27,7 +28,9 @@
 
 .tao {
   display: block;
-  height: 28px;
+  height: 16px;
+  overflow: hidden;
+  margin-bottom: 8px;
   color: #666; }
 
 .tao i {

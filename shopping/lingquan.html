@@ -6,7 +6,12 @@
     <link rel="stylesheet" href="css/reset.css" type="text/css"/>
      <link rel="stylesheet" href="css/icon.css" type="text/css" />
     <link rel="stylesheet" href="css/public.css" type="text/css"/>
+    <link rel="stylesheet" href="css/index.css" type="text/css"/>
     <link rel="stylesheet" href="css/sibpublic.css" type="text/css"/>
+    
+    <script src="js/jquery-3.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/lingquan.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.params.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 <!--*************************-->
@@ -26,8 +31,8 @@
     <h1 class="log"></h1>
     <div class="headsearch">
         <form>
-            <input type="text" value="搜优惠券" class="txt"/>
-            <input type="button" value="搜索" class="btn">
+            <input type="text" value="搜优惠券" class="soutxt"/>
+            <input type="button" value="搜索" class="soubtn">
         </form>
     </div>
     <div class="headright">
@@ -42,13 +47,13 @@
     <div class="navbox">
         <ul class="navUl">
             <li class="posili">
-                <a href="#" class="navfirst">
+                <a href="/httpview/shopping/index.html" class="navfirst">
                     <i class="navtb1"></i>今日上新
                 </a>
             </li>
-            <li><a href="#">领券优惠直播</a></li>
-            <li><a href="#" class="navthird">超级人气榜<i class="navtb2"></i></a></li>
-            <li><a href="#">特卖精选</a></li>
+            <li><a href="/httpview/shopping/lingquan.html">领券优惠直播</a></li>
+            <li><a href="/httpview/shopping/renqi.html" class="navthird">超级人气榜<i class="navtb2"></i></a></li>
+            <li><a href="/httpview/shopping/jing.html">特卖精选</a></li>
         </ul>
     </div>
 </div>
@@ -60,14 +65,14 @@
 <div class="catlist">
     <ul class="catleft">
         <li><a href="#">全部优惠（5568）</a></li>
-        <li><a href="#">服装（1408）</a></li>
-        <li><a href="#">母婴（601）</a></li>
-        <li><a href="#">化妆品（420）</a></li>
-        <li><a href="#">居家（1169）</a></li>
-        <li><a href="#">鞋包配饰（821）</a></li>
-        <li><a href="#">美食（439）</a></li>
-        <li><a href="#">文体车品（370）</a></li>
-        <li><a href="#">数码家电（340）</a></li>
+        <li><a href="/httpview/shopping/lingquan.html?name=fuzhuang" id="fuzuang">服装（1408）</a></li>
+        <li><a href="/httpview/shopping/lingquan.html?name=muying" id="muying">母婴（601）</a></li>
+        <li><a href="/httpview/shopping/lingquan.html?name=huazhuangpin" id="huazhuang">化妆品（420）</a></li>
+        <li><a href="/httpview/shopping/lingquan.html?name=jujia" id="jujia">居家（1169）</a></li>
+        <li><a href="/httpview/shopping/lingquan.html?name=xiebao" id="xiebao">鞋包配饰（821）</a></li>
+        <li><a href="/httpview/shopping/lingquan.html?name=meishi" id="meishi">美食（439）</a></li>
+        <li><a href="/httpview/shopping/lingquan.html?name=wenti" id="wenti">文体车品（370）</a></li>
+        <li><a href="/httpview/shopping/lingquan.html?name=shuma" id="shuma">数码家电（340）</a></li>
     </ul>
     <div class="cartright">
         <span>排序：</span>
@@ -100,6 +105,45 @@
     </ul>
 </div>
 
+<!--**********领券优惠直播***************-->
+<div class="zhibo">
+	 <div class="miaotop">
+        <div class="miaotleft">
+            <p class="leftp">特卖精选</p>
+            <span class="leftspan">/人气款、评价好、性价比高/</span>
+        </div>
+        <div class="teright">
+         	   <a href="#">查看更多</a> >>
+        </div>
+    </div>
+    
+    <div class="zhibottom">
+    	<div class="zhibox" id="indexZhiBox">
+	    	
+    	</div>
+    </div>
+</div>
+
+<!--**********分页***************-->
+<div class="fenye">
+	<ul class="pageList" id="page">
+		<li class="prev" id="prev">上一页</li>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li class="next" id="next">下一页</li>
+				
+	</ul>
+	<div class="last">
+		<span>共5页</span>
+		<p class="p1">到第<input class="txt" id="txt" type="text" value="1">页 </p>
+		<input type="button" id="btn" class="btn" value="确定" />
+	</div>
+
+</div>
+
 
 <!--***********footer**************-->
 <div class="footer">
@@ -113,7 +157,7 @@
     	<a href="http://www.miitbeian.gov.cn/" target="_blank" >粤ICP备15089449号-2</a>&nbsp;&nbsp;
     	<a href="http://wpa.qq.com/msgrd?v=3&uin=184182000&site=qq&menu=yes" title="联系我帮你解答" class="diffcor">^_^亲遇到问题，联系我帮你处理哈</a>
     </div>
-    <div class="toTop">&#xe60c;</div>
+    <div class="toTop" id="toTop">&#xe60c;</div>
 </div>
 
 

@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="css/sibpublic.css" type="text/css"/>
     <link rel="stylesheet" href="css/prodetail.css" type="text/css"/>
     
-    <script src="js/jquery-3.1.0.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript" src="js/goall.js" ></script>
+    
 </head>
 <body>
 <!--*************************-->
@@ -30,8 +29,8 @@
     <h1 class="log"></h1>
     <div class="headsearch">
         <form>
-            <input type="text" value="搜优惠券" class="txt"/>
-            <input type="button" value="搜索" class="btn">
+            <input type="text" value="搜优惠券" class="soutxt"/>
+            <input type="button" value="搜索" class="soubtn">
         </form>
     </div>
     <div class="headright">
@@ -46,13 +45,13 @@
     <div class="navbox">
         <ul class="navUl">
             <li class="posili">
-                <a href="#" class="navfirst">
+                <a href="/httpview/shopping/index.html" class="navfirst">
                     <i class="navtb1"></i>今日上新
                 </a>
             </li>
-            <li><a href="#">领券优惠直播</a></li>
-            <li><a href="#" class="navthird">超级人气榜<i class="navtb2"></i></a></li>
-            <li><a href="#">特卖精选</a></li>
+            <li><a href="/httpview/shopping/lingquan.html">领券优惠直播</a></li>
+            <li><a href="/httpview/shopping/renqi.html" class="navthird">超级人气榜<i class="navtb2"></i></a></li>
+            <li><a href="/httpview/shopping/jing.html">特卖精选</a></li>
         </ul>
     </div>
 </div>
@@ -76,35 +75,35 @@
 			<a href="#">优惠详情</a>
     	</div>
     	<div class="golbottom">
-    		<img class="golPro" src="img/pro1.jpg"/>
+    		<img class="golPro" id="golPro" src=""/>
     		
     		<div class="goprice">
-    			<a class="goname">珀莱雅套装&nbsp;水漾肌密护肤品套装</a>
+    			<a class="goname" id="goname"></a>
     			<p class="goreason">
     				<span>推荐理由：</span>珀莱雅明星套装，深层水润，保湿滋养，水漾透嫩'饮水机'，补水，只
     			</p>
     			<div class="pricebox">
-    				<p class="quan">(独享)<span>券后价</span>&nbsp;￥<b>207</b></p><span>
-    				<span class="zai">在售价&nbsp;￥307</span>
+    				<p class="quan">(独享)<span>券后价</span>&nbsp;￥<b id="goquan"></b></p><span>
+    				<span class="zai" id="gozai">在售价&nbsp;￥</span>
     			</div>
     			<div class="feng">
     				<span class="fleft">疯抢中，手慢无</span>
-    				<span class="fright">已有 <i>44</i> 人购买</span>
+    				<span class="fright">已有 <i id="goalrea"></i> 人购买</span>
     			</div>
     			
     			<div class="gobuy">
     				<span class="buysteptext">购买流程</span>
     				<div class="buyfirst">
     					<p class="buyfirstp">
-    						<i>优惠券</i><b>￥100</b>
+    						<i>优惠券</i><b id="goyou">￥</b>
     					</p>
-    					<a href="#" class="lingbtn" target="_blank" title="领券后请点击右边按钮下单"><i>点击</i><i>领取</i></a>
+    					<div id="lingbtn" class="lingbtn"><i>加入</i><i>购物车</i></div>
     				</div>
     				<div class="buysecond">
     					<span></span>
     				</div>
     				<a class="buythird" href="#">
-    					去天猫下单
+    					立刻购买
     				</a>
     			</div>
     			
@@ -188,15 +187,8 @@
     </div>
     
     <div class="jingdettom">
-    	<div class="jingdetbox">
-	    	<dl class="jingdetdl redbor"> 
-	    		<dt><img src="img/TB1BnAILVXXXXbnXFXXYXGcGpXX_M2.SS2_290x290.jpg" /> </dt>
-	    		<dd>
-	    			<a href="#" class="tao"><i><img src="img/taobao.png" /></i>春秋季新款韩版bf棒球帽女装学生原宿</a>
-	    			<p class="youp">优惠券<i>80</i>元，已有<b>36</b>人购买</p>
-	    			<p class="sale">券后价￥<b>98</b>元，正常售价<i>178</i></p>
-	    		</dd>
-	    	</dl>
+    	<div class="jingdetbox" id="jingdetbox">
+	    	
     	</div>
     </div>
 </div>
@@ -217,6 +209,24 @@
     <div class="toTop">&#xe60c;</div>
 </div>
 
+<!--***********购物车**************-->
 
+<div class="carbox" id="carbox"></div>
+
+<div class="car" id="car">
+	<div class="addOk">
+		<div class="addTop">
+			<i class="addui"></i>商品已成功加入购物车
+		</div>
+		<div class="go">
+			<a href="/httpview/shopping/index.html" class="back">&lt;&lt;继续购物</a>
+			<a href="#" class="jiebtn" id="goCar">去结算</a>
+		</div>
+	</div>
+</div>
+
+<script src="js/jquery-3.1.0.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/jquery.params.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" src="js/goall.js" ></script>
 </body>
 </html>

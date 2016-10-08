@@ -29,8 +29,8 @@ $(function(){
 			"palreasale":palreasale
 		}
 		var dataJsonStr = JSON.stringify(dataJsonObj);
-		console.log(dataJsonObj);
-		console.log(dataJsonStr);
+//		console.log(dataJsonObj);
+//		console.log(dataJsonStr);
 		$.ajax({
 			type:"post",
 			url:"../../../product/CreateUpdateProduct_post",
